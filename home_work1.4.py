@@ -2,8 +2,15 @@
 
 r = input('Введите многозначное число:     ')
 
-spel =[]
+print(r)
+print(type(r))
 
-spel.append(r)
+a = ('9', '8', '7', '6', '5', '4', '3', '2', '1')
 
-print(max(r))
+i = -1
+
+while True:
+    i += 1
+    if r.find(a[i]) != -1:
+        print(a[i])
+        break
