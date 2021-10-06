@@ -1,8 +1,9 @@
 from itertools import count, cycle
 
+
 for i in count(1, 2):
     print(i)
-    if i > 1110:
+    if i > 110:
         break
 
 steel = ['Banana!', 'Papple']

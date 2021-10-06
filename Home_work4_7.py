@@ -2,11 +2,11 @@ from functools import reduce
 
 
 def fact(n):
+    j = 1
     for i in range(1, n + 1):
-        yield i
-    mult_fact = reduce(lambda x, y: x * y, range(1, n + 1))
-    return print(f'Факториал числа {n}! = {mult_fact}')
+        j *= i
+        yield j
 
-
-for i in fact(4):
-    print(i)
+n = 9
+for num, i in enumerate(fact(n)):
+    print(f'Факториал числа {num + 1}! = {i}')
