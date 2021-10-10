@@ -11,7 +11,7 @@ import json
 
 firm = {}
 success_firm, itog_firm = 0, 0
-with open('Фирмы.txt', encoding='utf-8') as list_firm:
+with open('firms.txt', encoding='utf-8') as list_firm:
     ever_firm = list_firm.readlines()
     for split_ever in ever_firm:
         ever = split_ever.split()
@@ -23,5 +23,5 @@ with open('Фирмы.txt', encoding='utf-8') as list_firm:
     average_prof = itog_firm / success_firm
     conclus = [firm, {'average_prof': round(average_prof, 3)}]
 
-with open('Фирмы.json', 'w') as firm:
+with open('firms.json', 'w') as firm:
     json.dump(conclus, firm)

@@ -7,7 +7,7 @@
 
 
 itog_hour = {}
-with open('План_обучения.txt', 'r', encoding='utf-8') as train:
+with open('Plan_train.txt', 'r', encoding='utf-8') as train:
     train_line = train.readlines()
     for scien in train_line:
         split_scien = scien.split()

@@ -3,13 +3,7 @@
 # данные, вводимые пользователем. Об окончании ввода данных будет свидетельствовать пустая строка.
 
 with open('text.txt', 'w+') as file:
-    print('Введите несколько строк для записи в файл')
-    some = [
-        input(''), '\n',
-        input(''), '\n',
-        input(''),
-    ]
-    file.writelines(some)
-    file.seek(0)
-    content = file.read()
-    print(content)
+    new_line = input(f'Введите текст:  ')
+    while new_line:
+        file.write(f'{new_line}\n')
+        new_line = input(f'Введите текст:  ')

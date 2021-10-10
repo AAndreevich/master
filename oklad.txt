@@ -1,0 +1,12 @@
+Ivanov 20000
+Petrov 26000
+Sidorov 34000
+Vasechkin 17000
+Detockin 21000
+Katanyan 19500
+Smirnov 45000
+Yusupov 19500
+Raskolnikov 29000
+Filatov 23500
+Marfin 13000
+Koshkin 25000
